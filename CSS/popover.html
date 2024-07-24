@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .popover{
+            border: 1px solid white;
+            background-color: green;
+            display: none;
+            position: absolute;   
+        }
+        .popover-wrapper{
+            width: 200px;
+            background-color: yellow;
+            position:relative;
+        }
+        .popover-wrapper:hover .popover{
+            display: block;
+        }
+    </style>
+</head>
+<body>
+    <div class="popover-wrapper">
+        <button>Login</button>
+        <div class="popover">
+            <ul>
+                <li>Dashboard</li>
+                <li>Account</li>
+            </ul>     
+        </div>
+    </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, dolores.</p>
+</body>
+</html>

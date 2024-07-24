@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+</head>
+<body>
+    <h1>Click below to start Timer</h1>
+    <button onclick="startTimer()">Click me!</button>
+    <p id="demo"></p>
+
+    <script>
+        function startTimer() {
+            let seconds = 15;  
+             
+            let timerInterval = setInterval(function() {
+                document.getElementById("demo").innerHTML = formatTime(seconds);
+                document.getElementById("demo").style.color="blue";
+                seconds--;
+
+                if (seconds < 0) {
+                    clearInterval(timerInterval);  
+                    timeUp();
+                }
+            },1000);
+        }
+        
+
+        function formatTime(seconds) {
+            
+            const hours=Math.floor(seconds/3600);
+            const minutes = Math.floor(seconds / 60);
+            const remainingSeconds = seconds % 60;
+            return `${hours}:${minutes}:${remainingSeconds < 10 ? '0' : ''}${remainingSeconds}`;
+        }
+
+        function timeUp() {
+            alert("Your time is up!");
+
+        }
+    </script>
+</body>
+</html>

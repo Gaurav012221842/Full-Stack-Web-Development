@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <img  name="slidee" width="100%" height="40%">
+    <button onclick="prevImage()">Previous</button>
+    <button onclick="nextImage()">Next</button>
+
+    <script>
+        var i=0;
+        var images=Array();
+        images[0]='download (1).jpeg';
+        images[1]='download (2).jpeg';
+        images[2]='download (3).jpeg';
+        images[3]='download (4).jpeg';
+        images[4]='download.jpeg';
+        function   changeImage() {
+            document.slidee.src = images[i];
+        }
+        function nextImage() {
+            if (i < images.length - 1) {
+                i++;
+            } else {
+                i = 0;
+            }
+            changeImage();
+        }
+        function prevImage() {
+            if (i > 0) {
+                i--;
+            } else {
+                i = images.length - 1;
+            }
+            changeImage();
+        }
+
+        changeImage();
+
+    </script>
+</body>
+</html>

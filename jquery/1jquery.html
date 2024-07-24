@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script>
+$(document).ready(function(){
+  $("#hide").click(function(){
+    $("img").hide();
+  });
+  $("#sho").click(function(){
+    $("img").show();
+  });
+});
+</script>
+</head>
+<body>
+
+<p>If you click on the "Hide" button, I will disappear.</p>
+<img src="./mercury.gif" alt="Photo"><br>
+<button id="hide">Hide</button>
+<button id="sho">Show</button>
+
+</body>
+</html>

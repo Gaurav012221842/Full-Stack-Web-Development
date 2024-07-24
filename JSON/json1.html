@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <script>
+        var stud=`{
+            "name":"Gaurav Kumar","cgpa":8.7,"courses":"HTML"
+        }`
+        var stud1=JSON.parse(stud);
+        document.getElementById("demo").innerHTML=stud1.name+" &  Cgpa = "+stud1.cgpa+" and course is = "+stud1.courses;
+    </script>
+</body>
+</html>

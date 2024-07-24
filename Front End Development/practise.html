@@ -1,0 +1,253 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f8ff; /* Light Sky Blue */
+            font-family: 'Arial', sans-serif;
+        }
+
+        #x {
+            border: 2px solid #1e90ff; /* Dodger Blue */
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 20px;
+            background-color: #fff; /* White */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+        }
+
+        h1 {
+            color: #1e90ff; /* Dodger Blue */
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        label {
+            margin-bottom: 8px;
+            color: #1e90ff; /* Dodger Blue */
+        }
+
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 12px;
+            box-sizing: border-box;
+            border: 1px solid #b0c4de; /* Light Steel Blue */
+            border-radius: 4px;
+        }
+
+        input[type="checkbox"] {
+            margin-right: 8px;
+        }
+
+        button {
+            background-color: #1e90ff; /* Dodger Blue */
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #0066cc; /* Royal Blue */
+        }
+    </style>
+</head>
+<body>
+    <div id="x">
+         <h1>h</h1>
+        <form action="">
+            <label for="name">Name: </label>
+            <input type="text" placeholder="Enter your name" id="name" required>
+
+            <label for="mail">Email: </label>
+            <input type="email" placeholder="Enter your mail" id="mail" required>
+
+            <label for="age">Age: </label>
+            <input type="number" id="age" min="18" max="60" required>
+
+            <label for="pass">Password: </label>
+            <input type="password" placeholder="Enter your password" id="pass" required>
+
+            <label for="cpass">Confirm Password: </label>
+            <input type="password" placeholder="Enter Confirm password" id="cpass" required>
+
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" required>
+            <label for="male">Male </label>
+
+            <input type="radio" id="female" name="gender" checked required>
+            <label for="female">Female </label>
+
+            <input type="radio" name="gender" id="other" required>
+            <label for="other">Other</label>
+
+            <select name="country" id="cont">
+                <option value="india">India</option>
+                <option value="aus">Australia</option>
+                <option value="nepal">Nepal</option>
+            </select>
+
+            <input type="checkbox" id="cond" required>
+            <label for="cond">Terms & Conditions</label>
+
+            <button>Submit</button>
+        </form>
+    </div>
+</body>
+</html> -->
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        #x {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: aqua;
+            border: 2px solid blue;
+            border-radius: 10px;
+            margin-top: 20px;
+            padding: 20px;
+        }
+
+        nav {
+            background-color: #333;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <h1>Registration Form</h1>
+    <div id="x">
+        <form action="">
+            <label for="name">Name:</label>
+            <input type="text" placeholder="Enter your name" id="name" required><br><br>
+
+            <label for="mail">Email:</label>
+            <input type="email" placeholder="Enter your email" id="mail" required> <br><br>
+
+            <label for="age">Age:</label>
+            <input type="number" id="age" min="18" max="60" required> <br><br>
+
+            <label for="pass">Password:</label>
+            <input type="password" placeholder="Enter your password" id="pass" required><br><br>
+
+            <label for="cpass">Confirm Password:</label>
+            <input type="password" placeholder="Enter Confirm password" id="cpass" required><br>
+
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" required>
+            <label for="male">Male </label><br>
+            <input type="radio" id="female" name="gender" checked required>
+            <label for="female">Female </label><br>
+            <input type="radio" name="gender" id="other" required>
+            <label for="other">Other</label><br>
+            <br>  
+            <select name="country" id="cont">
+                <option value="india" >India</option>
+                <option value="aus">Australia</option>
+                <option value="nepal">Nepal</option>
+            </select><br><br>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+
+            <input type="checkbox" id="cond" required>
+            <label for="cond">Terms & Conditions</label><br>
+
+            <br><br><button> Submit </button>
+        </form>
+    </div>
+</body>
+</html>
+ -->
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Click the below button to get timer</h1>
+    <button onclick="timer()">Click Me!</button>
+    <p id="demo"></p>
+    <script>
+        function timer() {
+            let second = 10;
+            let timerr = setInterval(function () {
+                document.getElementById("demo").innerHTML = formatSecond(second);
+                document.getElementById("demo").style.color = "red";
+                second--;
+
+                if (second < 0) {
+                    clearInterval(timerr);
+                    timeUp();
+                }
+
+            }, 1000);
+        }
+
+        function formatSecond(sec) {
+            const hours = Math.floor(sec / 3600);
+            const minutes = Math.floor(sec / 60);
+            const seconds = sec % 60;
+            return `${hours}:${minutes}:${seconds < 10 ? '0' : ''}${seconds}`;
+        }
+
+        function timeUp() {
+            alert("Your time is up.");
+        }
+    </script>
+</body>
+</html>

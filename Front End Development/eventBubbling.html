@@ -1,0 +1,33 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .ele{
+            border: 20px solid;
+            padding: 50px1;
+        }
+    </style>
+</head>
+<body>
+    <form class="ele"  id="myForm" action="">
+        <div id="main" class=" ele">
+            <p class="ele" onclick="event.stopPropagation()" id="p1"></p>
+        </div>
+    </form>
+    <script>
+        p1.addEventListener("click",function(){
+            this.style.borderColor='red';
+        });
+        main.addEventListener("click",function(){
+            this.style.borderColor='green';
+        });
+        myForm.addEventListener("click",function(){
+            this.style.borderColor='blue';
+        });
+    </script>
+</body>
+</html>

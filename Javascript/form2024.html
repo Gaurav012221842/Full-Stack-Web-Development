@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: auto;
+    margin-top: 200px;
+    width: 30%; /* You can adjust the width as needed */
+    border: 5px solid rebeccapurple;
+    border-radius: 50px;
+    box-sizing: border-box;
+        }
+        .coloor {
+            color: red; /*                  Set the text color to red                                 */
+        }
+    </style>
+</head>
+<body>
+    <h2>Contact Us</h2>
+   <div class="container">
+    <form novalidate onsubmit="return validation()">
+        <label for="name">Name</label><br>
+        <input type="text" id="n1" name="name" placeholder="Your name.."><br>
+        <span id="n2" class="coloor"></span><br>
+        <label for="email">Email</label><br>
+        <input type="email" id="mail" name="email" placeholder="Your Email...." style="justify-content: center "><br><br>
+        <label for="textarea">Message</label><br>
+        <textarea name="message" id="msg" cols="30" rows="5" placeholder="Write Something..."></textarea><br>
+        <input type="submit" value="Submit" style="background-color: green;">
+        <script>
+            function validation() {
+               //var isValid = true; // Set isValid to true initially
+
+                if (document.getElementById("n1").value === "") {
+                    document.getElementById("n2").innerHTML = "Name is Mandatory";
+                    //isValid = false;
+                    event.preventDefault();
+                }
+                // Additional validation for email and message can be added here
+
+                //return isValid;
+            }
+            //  Mox 500mg
+        </script>
+    </form>
+   </div>
+</body>
+</html>

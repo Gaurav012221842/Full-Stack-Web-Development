@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <style>
+        
+         
+        #x{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 80vh;
+            width: 60%;
+            background-color: aqua;
+            border : 2px solid blue;
+            border-radius: 10px;
+            
+            
+        }   
+        nav {
+            background-color: #0a3e9e;
+            overflow: hidden;
+        }
+
+        nav a {
+            float: left;
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        nav a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+        #media {
+            margin-top: 20px; /* Adjust the margin as needed */
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="https://www.w3schools.com" >Home</a>
+        <a href="https://www.youtube.com">About</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <h1>Registration Form</h1>
+     
+    
+    <div id="media">
+        <iframe height="300" width="500" src="https://www.w3schools.com" frameborder="0"></iframe>
+    </div>
+    <div id="x">
+        <form action="">
+            <label for="name">Name: </label>
+            <input type="text" placeholder="Enter your name" id="name" required><br><br>
+            <label for="mail">Email: </label>
+            <input type="email" placeholder="Enter your mail" id="mail" required> <br><br>
+            <label for="age">Age: </label>
+            <input type="number"   id="age" min="18" max="60" required> <br><br>
+            <label for="pass">Password: </label>
+            <input type="password" placeholder="Enter your password" id="pass" required><br><br>
+            <label for="cpass">Confirm Password: </label>
+            <input type="password" placeholder="Enter Confirm password" id="cpass" required><br>
+            <p>Gender:</p>
+            <input type="radio" id="male" name="gender" required>
+            <label for="male">Male </label><br>
+            <input type="radio" id="female" name="gender" checked required>
+            <label for="female" >Female </label><br>
+            <input type="radio" name="gender" id="other" required>
+            <label for="other">Other</label><br>
+            <br>  
+            <select name="country" id="cont">
+                <option value="india" >India</option>
+                <option value="aus">Australia</option>. 
+                <option value="nepal">Nepal</option>. 
+            </select><br><br>
+            <textarea id="message" name="message" rows="4" required></textarea>
+             <label for="message">Message:</label><br>
+            <input type="checkbox" id="cond" required>
+            <label for="cond">Terms & Conditions</label><br>
+    
+
+
+            <br><br><button> Submit </button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Slideshow</title>
+    <style>
+        #slideshow {
+            max-width: 100%;
+            height: auto;
+            overflow: hidden;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            transition: opacity 1s ease-in-out;
+        }
+    </style>
+</head>
+<body>
+
+    <div id="slideshow">
+        <img src="./download (1).jpeg" alt="Image 1">
+        <img src="./download (2).jpeg" alt="Image 2">
+        <img src="./download (3).jpeg" alt="Image 3">
+        <!-- Add more images as needed -->
+    </div>
+
+    <script>
+        var currentImage = 0;
+        var images = document.querySelectorAll('#slideshow img');
+        
+        function showImage(index) {
+            images[currentImage].style.opacity = 0;
+            currentImage = (index + 1) % images.length;
+            images[currentImage].style.opacity = 1;
+        }
+
+        function startSlideshow() {
+            setInterval(function () {
+                showImage(currentImage);
+            }, 3000); // Change image every 3 seconds (adjust as needed)
+        }
+
+        startSlideshow();
+    </script>
+
+</body>
+</html>

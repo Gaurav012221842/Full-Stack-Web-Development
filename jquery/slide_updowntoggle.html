@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Include jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            // Wait for the document to be ready before setting up event handlers
+            $("#slideDownButton").click(function(){
+                $("img").slideDown();
+            });
+
+            $("#slideUpButton").click(function(){
+                $("img").slideUp();
+            });
+
+            $("#slideToggleButton").click(function(){
+                $("img").slideToggle();
+            });
+            $("button").css({
+                "margin": "5px",
+                "padding": "8px 12px",
+                "font-size": "6px"
+            });
+        });
+    </script>
+    
+</head>
+<body>
+    <img src="./mercury.gif" alt="picture"><br>
+    <!-- Add buttons with unique IDs -->
+    <button id="slideDownButton">Slide Down</button>
+    <button id="slideUpButton">Slide Up</button>
+    <button id="slideToggleButton">Slide Toggle</button>
+</body>
+</html>
